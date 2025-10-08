@@ -4,7 +4,8 @@ Streamlit 学習用リポジトリ
 
 ## バージョン情報
 
-Python : 3.14.0  
+Python : 3.12.0  
+pip : 25.2
 Streamlit :
 
 ## 参考
