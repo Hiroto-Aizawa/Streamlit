@@ -4,9 +4,18 @@ Streamlit 学習用リポジトリ
 
 ## バージョン情報
 
-Python : 3.12.0  
-pip : 25.2
-Streamlit :
+Python : 3.12.10  
+pip : 25.0.1  
+Streamlit : 1.50.0  
+Pillow : 11.3.0
+
+## 使用ライブラリ
+
+・Streamlit  
+　-Web アプリ開発用ライブラリ
+
+Pillow  
+　-画像処理ライブラリ
 
 ## 参考
 

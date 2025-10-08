@@ -34,8 +34,6 @@ streamlit_venv\Scripts\activate
 (streamlit_venv) ~/
 ```
 
-仮想環境が有効化されると、プロンプトの先頭に `(venv)` と表示されます。
-
 ## 3. Streamlit のインストール
 
 仮想環境内で Streamlit をインストール:
@@ -53,17 +51,11 @@ pip install streamlit
 pip と setuptools を最新版にアップグレードしてから、再度インストールをする
 
 ```bash
-# 【pipとsetuptoolsのアップグレード】
-python -m pip install --upgrade pip setuptools wheel
+# 【pipのアップグレード】
+python -m pip install --upgrade pip
 
 # 【バージョン確認】
 pip list
-
-# Package    Version
-# ---------- -------
-# pip        25.2
-# setuptools 80.9.0
-# wheel      0.45.1
 
 # 【再度Streamlitをインストール】
 pip install streamlit
@@ -118,5 +110,21 @@ streamlit run app.py
 
 - **コマンドが認識されない場合**: Python のパスが通っているか確認してください
 - **ポートが使用中の場合**: `streamlit run app.py --server.port 8502` で別のポートを指定できます
+
+##　 7.ライブラリのインストール
+
+### Pillow のインストール
+
+画像処理ライブラリの Pillow をインストールします。
+
+このライブラリを使用して、Streamlit で作成したページに画像を表示させます。
+
+```bash
+# Pillowのインストール
+pip install Pillow
+
+# バージョンの確認
+pip show Pillow
+```
 
 これで環境構築は完了です!公式ドキュメント（https://docs.streamlit.io/）も非常に充実しているので、併せて参照することをお勧めします。
