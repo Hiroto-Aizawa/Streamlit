@@ -20,7 +20,7 @@ image = Image.open('Git_DL_page.png')
 st.image(image, width=200, caption='サンプル画像')
 
 # 【動画】
-# video_file = open('streamlit_movie.mp4', 'rb')
+# video_file = open('movie.mp4', 'rb')
 # video_bytes = video_file.read()
 # st.video(video_bytes)
 
