@@ -5,7 +5,7 @@ Streamlit 学習用リポジトリ
 ## 開発環境
 
 OS : Windows OS  
-Python : 3.12.10  
+Python : [3.12.10](https://www.python.org/downloads/release/python-31210/)  
 pip : 25.0.1  
 Streamlit : 1.50.0  
 Pillow : 11.3.0
