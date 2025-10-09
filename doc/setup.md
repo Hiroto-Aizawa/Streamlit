@@ -25,9 +25,13 @@ cd streamlit_project
 #python -m venv [仮想環境名]
 python -m venv stremalit_venv
 
-# 【仮想環境の有効化】
+# 【Windowsでの仮想環境の有効化】
 #[仮想環境名]\Scripts\activate
 streamlit_venv\Scripts\activate
+
+# 【Linux, Macでの仮想環境の有効化】
+#[仮想環境名]/bin/activate
+streamlit_venv/bin/activate
 
 # 【有効化されたかの確認】
 # 以下のようにパスの前に[仮想環境名]が表示されれば有効化されている
