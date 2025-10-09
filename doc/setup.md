@@ -24,7 +24,7 @@ cd streamlit_project
 
 # 【仮想環境の作成】
 #python -m venv [仮想環境名]
-python -m venv stremalit_venv
+python -m venv streamlit_venv
 
 # 【Windowsでの仮想環境の有効化】
 #[仮想環境名]\Scripts\activate
@@ -39,6 +39,10 @@ streamlit_venv/bin/activate
 (streamlit_venv) ~/
 ```
 
+### トラブルシューティング
+
+[VSCode insiders venv activate 時の「このシステムではスクリプトの実行が無効になっているため～」 エラーの解決](https://qiita.com/startours777/items/2d35f2c6de12071a4c77)
+
 ## 3. Streamlit のインストール
 
 仮想環境内で Streamlit をインストール:
@@ -51,11 +55,14 @@ python -m pip install --upgrade pip
 
 # 【Streamlitをインストール】
 pip install streamlit
+
+# 【バージョンの確認】
+streamlit --version
 ```
 
-### Steramlit の依存パッケージである`pyarrow`のビルドに失敗した場合の解決方法
+## ※Steramlit の依存パッケージである`pyarrow`のビルドに失敗した場合の解決方法
 
-**解決方法 1:　ビルド済みの`pyarrow`を使用(推奨)**
+### 解決方法 1:　ビルド済みの`pyarrow`を使用(推奨)
 
 pip と setuptools を最新版にアップグレードしてから、再度インストールをする
 
@@ -67,7 +74,7 @@ pip list
 pip install streamlit
 ```
 
-**解決方法 2:　 pyarrow を先に個別インストール**
+### 解決方法 2:　 pyarrow を先に個別インストール
 
 pyarrow のビルド済みバイナリを直接インストール
 
@@ -79,13 +86,20 @@ pip install pyarrow
 pip install streamlit
 ```
 
-## 4. インストールの確認
+## 7.ライブラリのインストール
 
-正しくインストールされたか確認:
+### Pillow のインストール
+
+画像処理ライブラリの Pillow をインストールします。
+
+このライブラリを使用して、Streamlit で作成したページに画像を表示させます。
 
 ```bash
+# 【Pillowのインストール】
+pip install Pillow
+
 # 【バージョンの確認】
-streamlit --version
+pip show Pillow
 ```
 
 ## 5. 最初のアプリを作成
@@ -116,23 +130,7 @@ streamlit run app.py
 
 ## トラブルシューティング
 
-- **コマンドが認識されない場合**: Python のパスが通っているか確認してください
-- **ポートが使用中の場合**: `streamlit run app.py --server.port 8502` で別のポートを指定できます
-
-##　 7.ライブラリのインストール
-
-### Pillow のインストール
-
-画像処理ライブラリの Pillow をインストールします。
-
-このライブラリを使用して、Streamlit で作成したページに画像を表示させます。
-
-```bash
-# 【Pillowのインストール】
-pip install Pillow
-
-# 【バージョンの確認】
-pip show Pillow
-```
+-   **コマンドが認識されない場合**: Python のパスが通っているか確認してください
+-   **ポートが使用中の場合**: `streamlit run app.py --server.port 8502` で別のポートを指定できます
 
 これで環境構築は完了です!公式ドキュメント（https://docs.streamlit.io/）も非常に充実しているので、併せて参照することをお勧めします。
