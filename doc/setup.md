@@ -2,9 +2,10 @@
 
 ## 1. Python のインストール確認
 
-まず、Python がインストールされているか確認します。コマンドプロンプトまたは PowerShell を開いて:
+まず、Python がインストールされているか確認します。`コマンドプロンプト`または `PowerShell` を開いて:
 
 ```bash
+# 【バージョンの確認】
 python --version
 ```
 
@@ -45,6 +46,10 @@ streamlit_venv/bin/activate
 pip(Python パッケージ管理システム)を使用して streamlit をインストールします。
 
 ```bash
+# 【pipのアップグレード】
+python -m pip install --upgrade pip
+
+# 【Streamlitをインストール】
 pip install streamlit
 ```
 
@@ -55,13 +60,10 @@ pip install streamlit
 pip と setuptools を最新版にアップグレードしてから、再度インストールをする
 
 ```bash
-# 【pipのアップグレード】
-python -m pip install --upgrade pip
-
 # 【バージョン確認】
 pip list
 
-# 【再度Streamlitをインストール】
+# 【Streamlitをインストール】
 pip install streamlit
 ```
 
@@ -70,10 +72,10 @@ pip install streamlit
 pyarrow のビルド済みバイナリを直接インストール
 
 ```bash
-# pyarrowを先にインストール
+# 【pyarrowをインストール】
 pip install pyarrow
 
-# その後Streamlitをインストール
+# 【Streamlitをインストール】
 pip install streamlit
 ```
 
@@ -82,6 +84,7 @@ pip install streamlit
 正しくインストールされたか確認:
 
 ```bash
+# 【バージョンの確認】
 streamlit --version
 ```
 
@@ -105,6 +108,7 @@ if name:
 以下のコマンドで実行:
 
 ```bash
+# 【アプリの実行】
 streamlit run app.py
 ```
 
@@ -124,10 +128,10 @@ streamlit run app.py
 このライブラリを使用して、Streamlit で作成したページに画像を表示させます。
 
 ```bash
-# Pillowのインストール
+# 【Pillowのインストール】
 pip install Pillow
 
-# バージョンの確認
+# 【バージョンの確認】
 pip show Pillow
 ```
 
