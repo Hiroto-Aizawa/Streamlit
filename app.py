@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
 import datetime
+import pandas as pd
+import matplotlib.pyplot as plt
 
 st.title('サンプルアプリ')
 st.caption('これはテストアプリです')
@@ -81,3 +83,17 @@ with st.form(key='profile_form'):
         st.text(f'年齢層: {age_category}')
         st.text(f'性別: {gender}')
         st.text(f'趣味: {", ".join(hobby)}')
+
+
+# データ分析関連
+df = pd.read_csv('平均気温.csv', index_col='月')
+# st.dataframe(df)
+# st.table(df)
+st.line_chart(df)
+st.bar_chart(df['2021年'])
+
+# matplotlib
+fig, ax = plt.subplots()
+ax.plot(df.index, df['2021年'], label='2021年')
+ax.set_title('matplotlib graph')
+st.pyplot(fig)
