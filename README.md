@@ -18,6 +18,24 @@ Pillow : 11.3.0
 ・Pillow  
 　-画像処理ライブラリ
 
+## アプリの起動
+
+### app.py
+
+ルートディレクトリにいる状態で下記コマンドを実行する
+
+```bash
+streamlit run app.py
+```
+
+### main_app.py
+
+web_app ディレクトリに移動し、下記コマンドを実行する
+
+```bash
+streamlit run main_app.py
+```
+
 ## 参考
 
 ・[ Streamlit](https://streamlit.io/)  
