@@ -8,3 +8,6 @@ mydataset = {
 myvar = pd.DataFrame(mydataset)
 
 print(myvar)
+
+# checking pandas version
+print(pd.__version__)
