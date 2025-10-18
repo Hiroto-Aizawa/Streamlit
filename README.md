@@ -42,3 +42,4 @@ streamlit run main_app.py
 ・[ Streamlit](https://streamlit.io/)  
 ・[ 【超簡単 Web アプリ】streamlit で Web アプリを最速で作ってネット公開！〜 プログラミング初心者向け 〜](https://www.youtube.com/watch?v=4nsTce1Oce8)  
 ・[ streamlit でデータ分析アプリを作ってみよう！](https://www.youtube.com/watch?v=de0SAWKJdhE)
+・[ Pandas Tutorial](https://www.w3schools.com/python/pandas/default.asp)
