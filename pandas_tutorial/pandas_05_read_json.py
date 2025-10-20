@@ -1,6 +1,6 @@
 import pandas as pd
 
-#df = pd.read_json('./data/data.json')
+df = pd.read_json('./data/data.json')
 
 # JSONファイルの内容を直接記述してDataFrameを作成
 data = {

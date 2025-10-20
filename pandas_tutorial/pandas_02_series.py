@@ -2,11 +2,11 @@ import pandas as pd
 
 a = [1, 7, 2]
 alphabet = ["x", "y", "z"]
-#myvar = pd.Series(a, index=["x", "y", "z"])
+myvar = pd.Series(a, index=["x", "y", "z"])
 myvar = pd.Series(a, index=alphabet)
 
 print(myvar, '\n')
-#print(myvar["y"])
+print(myvar["y"])
 
 ###
 ### キー/値のペアを持つ辞書からSeriesを作成

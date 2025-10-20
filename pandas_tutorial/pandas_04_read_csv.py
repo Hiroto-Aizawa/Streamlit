@@ -3,10 +3,10 @@ import pandas as pd
 df = pd.read_csv('./data/data.csv')
 
 # to_string()メソッドを使ってDataFrame全体を表示
-#print(df.to_string())
+print(df.to_string())
 
 # 行数の多い大規模なDataFrameの場合、Pandasは最初の5行と最後の5行のみを表示します。
-# print(df)
+print(df)
 
 # 返される行数はPandasのオプション設定で定義されます。
 # システムの最大行数はpd.options.display.max_rowsステートメントで確認できます。
