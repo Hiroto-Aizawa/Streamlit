@@ -10,6 +10,7 @@ pip : 25.0.1
 Streamlit : 1.50.0  
 Pillow : 11.3.0
 pandas : 2.3.3
+matplotlib : 3.10.7
 
 ## 使用ライブラリ
 
